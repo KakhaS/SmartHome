@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		BC7AB551261D934500A73171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC7AB54F261D934500A73171 /* Main.storyboard */; };
 		BC7AB553261D934600A73171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7AB552261D934600A73171 /* Assets.xcassets */; };
 		BC7AB556261D934600A73171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC7AB554261D934600A73171 /* LaunchScreen.storyboard */; };
+		BCAFFEE2261E24500074807A /* firstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEE1261E24500074807A /* firstPageViewController.swift */; };
+		BCAFFEE7261E28900074807A /* infoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEE5261E28900074807A /* infoCollectionViewCell.swift */; };
+		BCAFFEE8261E28900074807A /* infoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCAFFEE6261E28900074807A /* infoCollectionViewCell.xib */; };
+		BCB1B5322621F0BA008736E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCB1B5312621F0BA008736E9 /* GoogleService-Info.plist */; };
+		BCE86344261D9F67008578D5 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE86343261D9F67008578D5 /* registerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,14 @@
 		BC7AB552261D934600A73171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC7AB555261D934600A73171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC7AB557261D934600A73171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAFFEE1261E24500074807A /* firstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstPageViewController.swift; sourceTree = "<group>"; };
+		BCAFFEE5261E28900074807A /* infoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoCollectionViewCell.swift; sourceTree = "<group>"; };
+		BCAFFEE6261E28900074807A /* infoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = infoCollectionViewCell.xib; sourceTree = "<group>"; };
+		BCB1B5312621F0BA008736E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BCE86343261D9F67008578D5 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		E106DD3FBC9D1E305793F8B3 /* Pods-Blinkie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blinkie.debug.xcconfig"; path = "Target Support Files/Pods-Blinkie/Pods-Blinkie.debug.xcconfig"; sourceTree = "<group>"; };
+		E73A8D4AD69E2271DA0F13C8 /* Pods_Blinkie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blinkie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F365F669BFB526A97C819AC4 /* Pods-Blinkie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blinkie.release.xcconfig"; path = "Target Support Files/Pods-Blinkie/Pods-Blinkie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,11 +50,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A438CBF534FB367B56DC78F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E106DD3FBC9D1E305793F8B3 /* Pods-Blinkie.debug.xcconfig */,
+				F365F669BFB526A97C819AC4 /* Pods-Blinkie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BC7AB53D261D934500A73171 = {
 			isa = PBXGroup;
 			children = (
+				BCAFFEEA261E28A10074807A /* collectionview XIB */,
 				BC7AB548261D934500A73171 /* Blinkie */,
 				BC7AB547261D934500A73171 /* Products */,
+				1A438CBF534FB367B56DC78F /* Pods */,
+				EDE648918554E8C7F3185EB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +84,32 @@
 				BC7AB549261D934500A73171 /* AppDelegate.swift */,
 				BC7AB54B261D934500A73171 /* SceneDelegate.swift */,
 				BC7AB54D261D934500A73171 /* ViewController.swift */,
+				BCE86343261D9F67008578D5 /* registerViewController.swift */,
+				BCAFFEE1261E24500074807A /* firstPageViewController.swift */,
 				BC7AB54F261D934500A73171 /* Main.storyboard */,
 				BC7AB552261D934600A73171 /* Assets.xcassets */,
 				BC7AB554261D934600A73171 /* LaunchScreen.storyboard */,
+				BCB1B5312621F0BA008736E9 /* GoogleService-Info.plist */,
 				BC7AB557261D934600A73171 /* Info.plist */,
 			);
 			path = Blinkie;
+			sourceTree = "<group>";
+		};
+		BCAFFEEA261E28A10074807A /* collectionview XIB */ = {
+			isa = PBXGroup;
+			children = (
+				BCAFFEE6261E28900074807A /* infoCollectionViewCell.xib */,
+				BCAFFEE5261E28900074807A /* infoCollectionViewCell.swift */,
+			);
+			path = "collectionview XIB";
+			sourceTree = "<group>";
+		};
+		EDE648918554E8C7F3185EB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E73A8D4AD69E2271DA0F13C8 /* Pods_Blinkie.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC7AB55A261D934600A73171 /* Build configuration list for PBXNativeTarget "Blinkie" */;
 			buildPhases = (
+				3CC1E89C5A2456C558C53EAE /* [CP] Check Pods Manifest.lock */,
 				BC7AB542261D934500A73171 /* Sources */,
 				BC7AB543261D934500A73171 /* Frameworks */,
 				BC7AB544261D934500A73171 /* Resources */,
+				1E658F4FC12AD1BC009A154C /* [CP] Embed Pods Frameworks */,
+				3B39E3E7B1FFCD4F39C501A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,20 +174,84 @@
 			files = (
 				BC7AB556261D934600A73171 /* LaunchScreen.storyboard in Resources */,
 				BC7AB553261D934600A73171 /* Assets.xcassets in Resources */,
+				BCB1B5322621F0BA008736E9 /* GoogleService-Info.plist in Resources */,
+				BCAFFEE8261E28900074807A /* infoCollectionViewCell.xib in Resources */,
 				BC7AB551261D934500A73171 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E658F4FC12AD1BC009A154C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blinkie/Pods-Blinkie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blinkie/Pods-Blinkie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blinkie/Pods-Blinkie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B39E3E7B1FFCD4F39C501A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blinkie/Pods-Blinkie-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blinkie/Pods-Blinkie-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blinkie/Pods-Blinkie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CC1E89C5A2456C558C53EAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blinkie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC7AB542261D934500A73171 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCAFFEE7261E28900074807A /* infoCollectionViewCell.swift in Sources */,
 				BC7AB54E261D934500A73171 /* ViewController.swift in Sources */,
 				BC7AB54A261D934500A73171 /* AppDelegate.swift in Sources */,
 				BC7AB54C261D934500A73171 /* SceneDelegate.swift in Sources */,
+				BCAFFEE2261E24500074807A /* firstPageViewController.swift in Sources */,
+				BCE86344261D9F67008578D5 /* registerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +395,7 @@
 		};
 		BC7AB55B261D934600A73171 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E106DD3FBC9D1E305793F8B3 /* Pods-Blinkie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +414,7 @@
 		};
 		BC7AB55C261D934600A73171 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F365F669BFB526A97C819AC4 /* Pods-Blinkie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
